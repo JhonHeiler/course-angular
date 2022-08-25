@@ -1,0 +1,41 @@
+view => seelect terminal
+CREACION DE COMPONENTE => ng g c persona --skipTests=true
+PARA QUITAR EL MODO ESTRITO=> tsconfig.json/=>"strictPropertyInitialization":false,
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+PAINT
+Async paint : lo ultilizamos en la plantilla cuando no los queremos sucrubir en el archivo ts del componente
+let categorie of (categories| async)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SESSION #1
+1.Interpolacion=> Agrega valores dinamico plantilla html(Imprime)
+2.Expresiones con interpolaciones(operaciones)
+3.Eventos  (keyup) por medio de un selctor la interpolacion imprime lo que ingresemos en el input
+4.PROPETY BIDING => [disabled]='deshabilitar'=> desabilita
+5.EVENT BIDING => Captura evento cuando se da click (click),(input)=>captura en linea lo que ingresemos en el input
+6.TWO WAY BINDING EN ANGULAR =>(FormsModule)input =>[ngModel]="titulo"=> captura las propiedades que ingresemos
+7.DIRECTIVAS ngIf =>condicion else 
+8. ngFor => Recorrer elementos de un array
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SESSION #FORM
+https://mugan86.medium.com/formularios-en-angular-diferencias-template-y-reactive-forms-e37af5e30b81
+9.Comunicacion entre componente @Ouput()=>send parent  @Input=> send child
+10.LOCAL REFERENCE =>Solo envia informacion al Componente(Identifica los inpu #)
+11. viewChild y Local Reference => captura todos los input del formulario @viewChild(colocar las referencia de los input formulario)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SESSION #SERVICE
+12 Service!!!Data service = Nos evitamos de usar la diretivas de envio de datos!!! 
+el servicio lo injeta a los componentes que lo necesite
+
+13.COMPARTIR INFORMACION ENTRE SERVICIOS @Injectable
+
+14.ENVIAR INFORMACION ENTRE COMPONENTE ULTILIZANDO SERVICIOS EvenEmiter, 
+luego suscribimos para tener acceso al metodo que se esta emitiendo para poder ultilizarlo
+
+15. PIPES CURRENCY, DATE PIPES => DAR EL FORMATO DE MONEDA, TIPO DE MONEDA
+
+16.[ngClas] =>   Para asociar estilo por medio de logica
+17. routerLink => para pasar parametro o tambien queryParametro (+)=>conversion
+18. child route => Para cargar las rutas hijas
+19.componente de erro '**'
+20. firebase como base de datos
+21.httpClient
